@@ -8,3 +8,15 @@ def main(data:str):
     """
     
 # Read data from file
+    m=0
+    n=0
+    k=[n,m]
+    for i in data:
+        if not i.isdigit():
+            m+=1
+    for s in data:
+        if s.isdigit():
+            n+=1
+        k=[n,m]
+    return k
+print(main(open('txt_file/data05.txt').read()))
