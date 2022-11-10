@@ -7,4 +7,12 @@ def main(data:str):
         int: return answer
     """
 
-# Read data from file
+# Read data from file   
+
+    m=[]
+    for i in data:
+        if i.isdigit():
+            m.append(i)
+            
+    return max(m)
+print(main(open('txt_file/data08.txt').read()))
