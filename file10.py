@@ -8,3 +8,8 @@ def main(data:str):
     """
 
 # Read data from file
+    m=[]
+    for i in data:
+        m.append(len(i))
+    return max (m)
+print(main(open('txt_file/data10.txt').read().split('\n')))
